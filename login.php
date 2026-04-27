@@ -55,40 +55,37 @@ if (isset($_POST['login'])) {
 </div>
 
 
-<body>
 
 <div class="form-box">
     <h2>User Login</h2>
-    <p class="subtitle">Welcome back, please login</p>
+    <p style="text-align: center; color: var(--text-light); margin-top: -1.5rem; margin-bottom: 2rem;">Welcome back, please login</p>
 
     <?php if($msg!=""){ ?>
-        <div class="error"><?php echo $msg; ?></div>
+        <div class="message" style="background: #fdecea; color: #e74c3c; border-left-color: #e74c3c;"><?php echo $msg; ?></div>
     <?php } ?>
 
     <form method="post">
-        <input type="email" name="email" placeholder="Email" required>
+        <label style="font-size: 0.9rem; font-weight: 500; color: var(--text-color);">Email Address</label>
+        <input type="email" name="email" placeholder="email@example.com" required>
 
+        <label style="font-size: 0.9rem; font-weight: 500; color: var(--text-color);">Password</label>
         <div class="show-pass">
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            
+            <input type="password" name="password" id="password" placeholder="••••••••" required>
         </div>
 
-        <button class="btn" name="login">Login</button>
+        <button class="btn" name="login" style="width: 100%;">Login</button>
 
-        <div class="form-footer">
+        <div class="form-footer" style="text-align: center; margin-top: 2rem; font-size: 0.9rem;">
             Don’t have an account?
-            <a href="register.php">Register</a><br><br>
-            <a href="forgot_password.php">Forgot Password?</a>
+            <a href="register.php" style="color: var(--primary); font-weight: 600; text-decoration: none;">Register</a><br><br>
+            <a href="forgot_password.php" style="color: var(--text-light); text-decoration: none;">Forgot Password?</a>
         </div>
     </form>
 </div>
 
-<script>
-function togglePass() {
-    const pass = document.getElementById("password");
-    pass.type = pass.type === "password" ? "text" : "password";
-}
-</script>
+<div class="footer">
+    © 2025 Digital Mandir | Final Year BCA Project
+</div>
 
 </body>
 </html>
