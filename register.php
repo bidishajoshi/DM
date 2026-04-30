@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,8 +54,11 @@ if (isset($_POST['submit'])) {
     <div>
         <a href="index.php">Home</a>
         <a href="login.php">Login</a>
+        <button class="theme-toggle" title="Switch to Dark Mode"></button>
     </div>
 </div>
+
+<script src="theme-toggle.js"></script>
 
 
 <script>
