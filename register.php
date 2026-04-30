@@ -39,134 +39,24 @@ if (isset($_POST['submit'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>User Registration</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Digital Mandir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-<style>
-.error { color:red; font-size:13px; }
-.success { color:green; }
+<div class="navbar">
+    <h2>🛕 Digital Mandir</h2>
+    <div>
+        <a href="index.php">Home</a>
+        <a href="login.php">Login</a>
+    </div>
+</div>
 
-/* ================= BASE ================= */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Poppins", "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ================= CARD ================= */
-.form-box {
-    width: 420px;
-    background: rgba(255,255,255,0.95);
-    padding: 35px 30px;
-    border-radius: 16px;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
-    animation: slideUp 0.7s ease;
-}
-
-@keyframes slideUp {
-    from { transform: translateY(40px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* ================= HEADING ================= */
-.form-box h2 {
-    text-align: center;
-    font-size: 26px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.form-box h2 span {
-    color: #6a5acd;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 13px;
-    color: #777;
-    margin-bottom: 25px;
-}
-
-/* ================= INPUTS ================= */
-.form-box input {
-    width: 100%;
-    padding: 13px;
-    margin-top: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.form-box input:focus {
-    outline: none;
-    border-color: #6a5acd;
-    box-shadow: 0 0 8px rgba(106,90,205,0.35);
-}
-
-/* ================= ERRORS ================= */
-.error {
-    font-size: 12px;
-    color: #e74c3c;
-    margin-top: 3px;
-}
-
-.success {
-    background: #e8f9f0;
-    color: #27ae60;
-    padding: 8px;
-    border-radius: 6px;
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* ================= BUTTON ================= */
-.btn {
-    width: 100%;
-    background: linear-gradient(135deg, #6a5acd, #836fff);
-    border: none;
-    color: white;
-    padding: 13px;
-    margin-top: 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(106,90,205,0.5);
-}
-
-/* ================= FOOTER ================= */
-.form-footer {
-    text-align: center;
-    margin-top: 18px;
-    font-size: 13px;
-}
-
-.form-footer a {
-    color: #6a5acd;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.form-footer a:hover {
-    text-decoration: underline;
-}
-</style>
 
 <script>
 function validateName() {
