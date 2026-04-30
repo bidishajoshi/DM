@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +22,11 @@ if(!isset($_SESSION['user'])){
     <div>
         <a href="index.php">Home</a>
         <a href="logout.php" class="btn" style="padding: 5px 15px; font-size: 0.8rem;">Logout</a>
+        <button class="theme-toggle" title="Switch to Dark Mode"></button>
     </div>
 </div>
+
+<script src="theme-toggle.js"></script>
 
 <div class="container1">
     <h2>Welcome, <?php echo htmlspecialchars($_SESSION['user']); ?>!</h2>
