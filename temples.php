@@ -11,7 +11,7 @@ $result = mysqli_query($conn, "SELECT * FROM temples");
 ?>
 
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <title>Available Temples</title>
     <link rel="stylesheet" href="style.css">
@@ -24,8 +24,11 @@ $result = mysqli_query($conn, "SELECT * FROM temples");
     <div>
         <a href="my_bookings.php">My Bookings</a>
         <a href="logout.php">Logout</a>
+        <button class="theme-toggle" title="Switch to Dark Mode"></button>
     </div>
 </div>
+
+<script src="theme-toggle.js"></script>
 
 <div class="container">
     <h2>Available Temples</h2>

@@ -24,7 +24,7 @@ $services = mysqli_query(
 ?>
 
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <title>Select Service</title>
     <link rel="stylesheet" href="style.css">
@@ -33,7 +33,12 @@ $services = mysqli_query(
 
 <div class="navbar">
     <h2>🛕 Select Service</h2>
+    <div>
+        <button class="theme-toggle" title="Switch to Dark Mode"></button>
+    </div>
 </div>
+
+<script src="theme-toggle.js"></script>
 
 <div class="container">
 

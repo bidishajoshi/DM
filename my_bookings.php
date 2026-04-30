@@ -42,7 +42,7 @@ $result = mysqli_query($conn, $query);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <title>My Bookings</title>
     <link rel="stylesheet" href="style.css">
@@ -62,6 +62,30 @@ $result = mysqli_query($conn, $query);
             text-align: center;
             font-size: 22px;
             font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #fff;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.2);
+            transform: rotate(20deg);
+        }
+
+        html[data-theme="dark"] .navbar {
+            background-color: #4a148c;
         }
 
         .container {
@@ -185,7 +209,12 @@ $result = mysqli_query($conn, $query);
 </head>
 <body>
 
-<div class="navbar">🛕 My Bookings</div>
+<div class="navbar">
+    🛕 My Bookings
+    <button class="theme-toggle" title="Switch Theme"></button>
+</div>
+
+<script src="theme-toggle.js"></script>
 
 <div class="container">
 
