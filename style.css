@@ -417,13 +417,13 @@ html[data-theme="light"] .theme-toggle::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--white);
+    background: var(--card-bg);
     color: var(--text-color);
     text-decoration: none;
     border-radius: 50%;
     font-weight: 600;
     transition: var(--transition);
-    border: 1px solid #eee;
+    border: 1px solid var(--input-border);
 }
 
 .page-btn:hover {
