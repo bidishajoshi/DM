@@ -241,7 +241,7 @@ html[data-theme="light"] .theme-toggle::before {
 }
 
 .temple-card {
-    background: var(--white);
+    background: var(--card-bg);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -321,7 +321,7 @@ html[data-theme="light"] .theme-toggle::before {
 
 /* ---------- FORMS & BOXES ---------- */
 .form-box {
-    background: var(--white);
+    background: var(--card-bg);
     max-width: 450px;
     width: 90%;
     margin: 4rem auto;
@@ -343,10 +343,11 @@ html[data-theme="light"] .theme-toggle::before {
     width: 100%;
     padding: 0.8rem 1rem;
     margin-bottom: 1.2rem;
-    border: 1px solid #eee;
+    border: 1px solid var(--input-border);
     border-radius: 8px;
     font-size: 1rem;
-    background: #f9f9f9;
+    background: var(--input-bg);
+    color: var(--text-color);
     transition: var(--transition);
 }
 
@@ -355,7 +356,7 @@ html[data-theme="light"] .theme-toggle::before {
 .form-box textarea:focus {
     outline: none;
     border-color: var(--primary);
-    background: var(--white);
+    background: var(--card-bg);
     box-shadow: 0 0 0 4px rgba(211, 84, 0, 0.1);
 }
 
