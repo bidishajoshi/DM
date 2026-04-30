@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
 :root {
+    /* Light Mode Colors (Default) */
     --primary: #d35400;
     --primary-light: #e67e22;
     --primary-dark: #a04000;
@@ -10,9 +11,37 @@
     --text-light: #7f8c8d;
     --bg-color: #fdfaf5;
     --white: #ffffff;
+    --navbar-bg: #ffffff;
+    --card-bg: #ffffff;
+    --input-bg: #f9f9f9;
+    --input-border: #eee;
+    --table-row-bg: #fdfdfd;
+    --table-border: #f5f5f5;
     --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --shadow-light: 0 2px 15px rgba(0,0,0,0.05);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --border-radius: 12px;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --primary: #e67e22;
+    --primary-light: #d35400;
+    --primary-dark: #c86400;
+    --secondary: #d7ccc8;
+    --accent: #ffc107;
+    --text-color: #e0e0e0;
+    --text-light: #b0bec5;
+    --bg-color: #121212;
+    --white: #1e1e1e;
+    --navbar-bg: #1a1a1a;
+    --card-bg: #2a2a2a;
+    --input-bg: #333333;
+    --input-border: #444444;
+    --table-row-bg: #2f2f2f;
+    --table-border: #404040;
+    --shadow: 0 10px 30px rgba(0,0,0,0.5);
+    --shadow-light: 0 2px 15px rgba(0,0,0,0.3);
 }
 
 * {
