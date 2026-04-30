@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $query);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <title>Digital Mandir</title>
     <link rel="stylesheet" href="style.css">
@@ -32,8 +32,11 @@ $result = mysqli_query($conn, $query);
     <div>
         <a href="register.php">Register</a>
         <a href="login.php">Login</a>
+        <button class="theme-toggle" title="Switch to Dark Mode"></button>
     </div>
 </div>
+
+<script src="theme-toggle.js"></script>
 
 <div class="hero">
     <div>
