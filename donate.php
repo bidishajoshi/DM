@@ -36,7 +36,7 @@ if (isset($_POST['donate'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <title>Donate</title>
     <link rel="stylesheet" href="style.css">
@@ -50,6 +50,16 @@ if (isset($_POST['donate'])) {
     <?php endif; ?>
 </head>
 <body>
+
+<div class="navbar">
+    <h2>🛕 Digital Mandir</h2>
+    <div>
+        <a href="dashboard.php">Dashboard</a>
+        <button class="theme-toggle" title="Switch to Dark Mode"></button>
+    </div>
+</div>
+
+<script src="theme-toggle.js"></script>
 
 <div class="form-box">
     <h2>Donate to Temple</h2>
