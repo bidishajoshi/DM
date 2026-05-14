@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
 body {
     margin:0;
     font-family:"Poppins","Segoe UI",sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #6376cd, #764ba2);
     min-height:100vh;
     display:flex;
     justify-content:center;
