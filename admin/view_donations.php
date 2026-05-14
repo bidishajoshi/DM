@@ -67,7 +67,7 @@ if (!$result) {
             text-align: center;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #c0aaaa;
         }
         tr:nth-child(even){
             background-color: #d2aeae;
